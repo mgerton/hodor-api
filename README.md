@@ -6,8 +6,8 @@ Hodor. API.
 `$ npm install`
 
 ## Running the API
-`$ gulp serve`
+`$ node app.js`
 
 Need a different port?
 
-`$ gulp serve -p 7777`
+`$ node app.js -p 7777`
