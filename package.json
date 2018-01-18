@@ -14,9 +14,9 @@
   "author": "Matt Gerton <matt.gerton@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.8.5",
-    "hodor": "^0.2.0",
-    "yargs": "^1.3.1"
+    "express": "^4.16.2",
+    "hodor": "^0.3.0",
+    "yargs": "^10.1.1"
   },
   "devDependencies": {}
 }
