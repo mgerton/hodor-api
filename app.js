@@ -1,11 +1,14 @@
 const app = require('express')();
 
-const hodor = require('hodor');
+const Hodor = require('hodor').Hodor;
 const argv = require('yargs').argv;
 
 const port = argv.p || 8080;
 
 // Hodor all the things
-app.all('*', (req, res) => res.json({ hodor: hodor() }));
+app.all('*', (req, res) => {
+	const hodor = Hodor.Hodor('hodor').split(' ')[0];
+	res.json({ hodor });
+});
 
-app.listen(port, () => console.log(`${hodor()} on port ${port}.`));
+app.listen(port, () => console.log(`Running on port ${port}.`));
